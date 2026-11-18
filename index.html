@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlaceMate | Campus Placement Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="PlaceMate home">
+        <span class="brand-mark">PM</span>
+        <span>PlaceMate</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#tracker">Tracker</a>
+        <a href="#events">Events</a>
+      </nav>
+      <a class="nav-cta" href="#login">Login</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">BTech Major Project</p>
+          <h1>Campus Placement Portal</h1>
+          <p class="hero-text">
+            A complete web platform for students, placement officers, and
+            recruiters to manage job drives, profiles, applications, and
+            placement reports from one dashboard.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#jobs">View Open Drives</a>
+            <a class="secondary-button" href="#tracker">Check Workflow</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Placement office visual">
+          <img
+            src="assets/placement-hero.png"
+            alt="Students discussing placements beside a laptop dashboard"
+          />
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Placement statistics">
+        <article>
+          <strong>126</strong>
+          <span>Registered Students</span>
+        </article>
+        <article>
+          <strong>34</strong>
+          <span>Active Recruiters</span>
+        </article>
+        <article>
+          <strong>18</strong>
+          <span>Open Job Drives</span>
+        </article>
+        <article>
+          <strong>82%</strong>
+          <span>Current Placement Rate</span>
+        </article>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">Core Modules</p>
+          <h2>Built for real placement cell workflows</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>Student Profile</h3>
+            <p>
+              Academic details, skills, resume uploads, eligibility checks, and
+              job application history.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">02</span>
+            <h3>Recruiter Management</h3>
+            <p>
+              Company profiles, drive schedules, role requirements, package
+              details, and hiring rounds.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>Application Tracking</h3>
+            <p>
+              Applied, shortlisted, interview, offer, and rejected statuses with
+              a clear student dashboard.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">04</span>
+            <h3>Admin Reports</h3>
+            <p>
+              Department-wise analytics, placement percentage, highest package,
+              and downloadable summaries.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="jobs">
+        <div class="panel">
+          <div class="section-heading compact">
+            <p class="eyebrow">Open Drives</p>
+            <h2>Job listings</h2>
+          </div>
+          <div class="filter-bar" role="tablist" aria-label="Filter jobs">
+            <button class="filter active" data-filter="all" type="button">All</button>
+            <button class="filter" data-filter="cse" type="button">CSE</button>
+            <button class="filter" data-filter="ece" type="button">ECE</button>
+            <button class="filter" data-filter="core" type="button">Core</button>
+          </div>
+          <div class="job-list">
+            <article class="job-card" data-stream="cse">
+              <div>
+                <h3>Software Engineer Trainee</h3>
+                <p>NovaTech Solutions · Hyderabad</p>
+              </div>
+              <span>6.5 LPA</span>
+            </article>
+            <article class="job-card" data-stream="ece">
+              <div>
+                <h3>Embedded Systems Intern</h3>
+                <p>Veda Circuits · Bengaluru</p>
+              </div>
+              <span>4.8 LPA</span>
+            </article>
+            <article class="job-card" data-stream="core">
+              <div>
+                <h3>Graduate Engineer Trainee</h3>
+                <p>Axis Manufacturing · Pune</p>
+              </div>
+              <span>5.2 LPA</span>
+            </article>
+            <article class="job-card" data-stream="cse">
+              <div>
+                <h3>Data Analyst Associate</h3>
+                <p>InsightGrid · Chennai</p>
+              </div>
+              <span>5.9 LPA</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="panel login-panel" id="login">
+          <p class="eyebrow">Demo Login</p>
+          <h2>Access dashboard</h2>
+          <form id="loginForm">
+            <label>
+              Role
+              <select name="role">
+                <option>Student</option>
+                <option>Placement Officer</option>
+                <option>Recruiter</option>
+              </select>
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="student@college.edu" required />
+            </label>
+            <label>
+              Password
+              <input type="password" placeholder="Enter password" required />
+            </label>
+            <button class="primary-button full" type="submit">Open Demo</button>
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+          </form>
+        </aside>
+      </section>
+
+      <section class="section" id="tracker">
+        <div class="section-heading">
+          <p class="eyebrow">Student Dashboard</p>
+          <h2>Application tracker</h2>
+        </div>
+        <div class="tracker">
+          <article class="track-step done">
+            <span>1</span>
+            <h3>Profile Verified</h3>
+            <p>CGPA, branch, skills, and resume approved by placement cell.</p>
+          </article>
+          <article class="track-step done">
+            <span>2</span>
+            <h3>Applied</h3>
+            <p>Student applied for NovaTech Software Engineer Trainee drive.</p>
+          </article>
+          <article class="track-step active">
+            <span>3</span>
+            <h3>Shortlisted</h3>
+            <p>Aptitude round scheduled with hall ticket and reporting time.</p>
+          </article>
+          <article class="track-step">
+            <span>4</span>
+            <h3>Offer Released</h3>
+            <p>Final offer status updates after technical and HR interviews.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section events-section" id="events">
+        <div class="section-heading compact">
+          <p class="eyebrow">Placement Calendar</p>
+          <h2>Upcoming events</h2>
+        </div>
+        <div class="event-table">
+          <div class="event-row head">
+            <span>Date</span>
+            <span>Event</span>
+            <span>Audience</span>
+            <span>Status</span>
+          </div>
+          <div class="event-row">
+            <span>08 Jul</span>
+            <span>Resume Building Workshop</span>
+            <span>III & IV Year</span>
+            <strong>Open</strong>
+          </div>
+          <div class="event-row">
+            <span>14 Jul</span>
+            <span>Mock Aptitude Test</span>
+            <span>CSE, IT, ECE</span>
+            <strong>Scheduled</strong>
+          </div>
+          <div class="event-row">
+            <span>20 Jul</span>
+            <span>NovaTech Campus Drive</span>
+            <span>Eligible Students</span>
+            <strong>Shortlist</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>PlaceMate Campus Placement Portal</span>
+      <span>Student · Recruiter · Admin</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
