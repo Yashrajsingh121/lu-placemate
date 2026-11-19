@@ -1,0 +1,56 @@
+.resume-upload {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.resume-upload h3 {
+  margin-bottom: 12px;
+}
+
+.resume-dropzone {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border: 2px dashed var(--line);
+  border-radius: 8px;
+  background: #fbfdfc;
+  text-align: center;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.resume-dropzone:hover,
+.resume-dropzone.is-dragging,
+.resume-dropzone:focus-within {
+  border-color: var(--teal);
+  background: #edf8f5;
+}
+
+.resume-dropzone input[type="file"] {
+  min-height: auto;
+  padding: 8px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  cursor: pointer;
+}
+
+.resume-help,
+.resume-status {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.resume-status {
+  min-height: 1.3em;
+  color: var(--teal-dark);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.resume-status.is-error {
+  color: var(--coral);
+}
